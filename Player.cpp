@@ -1,7 +1,7 @@
 
 #include "Player.hpp"
 
-#define DefaultStackValue 25
+#define DefaultStackValue 100
 
 /* Constructor for the player object */
 Player::Player(const string NewName)
