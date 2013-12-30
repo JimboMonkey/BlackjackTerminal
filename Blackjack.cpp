@@ -408,9 +408,15 @@ const bool PlayersPlay(Table& BlackJackTable, Croupier& Dealer)
 							CurrentBox.TakeCard(DealtCard);
 							
 							PlayersFirstGo = false;	
-							PlayersStanding = true;
-
-							CurrentBox.Status();							
+							if(CurrentBox.CheckHand() > 21)
+							{
+								PlayersStanding = false;		
+							}
+							else
+							{
+								PlayersStanding = true;
+							}
+							CurrentBox.Status();								
 							sleep(2);
 							break;
 						}
