@@ -1,8 +1,6 @@
 
 #include "Participant.hpp"
 
-#define DefaultStackValue 25
-
 /* List all cards of the current hand */
 void Participant::ListHand() const
 {
